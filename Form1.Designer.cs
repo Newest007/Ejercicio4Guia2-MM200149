@@ -43,6 +43,7 @@ namespace Ejercicio4Guia2_MM200149
             this.txtarreglo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +62,7 @@ namespace Ejercicio4Guia2_MM200149
             this.groupBox1.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(175, 121);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(506, 308);
+            this.groupBox1.Size = new System.Drawing.Size(629, 308);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "OPERACIONES CON ARREGLO";
@@ -109,12 +110,13 @@ namespace Ejercicio4Guia2_MM200149
             this.btncalcular.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncalcular.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncalcular.ForeColor = System.Drawing.SystemColors.Control;
-            this.btncalcular.Location = new System.Drawing.Point(375, 144);
+            this.btncalcular.Location = new System.Drawing.Point(498, 139);
             this.btncalcular.Name = "btncalcular";
             this.btncalcular.Size = new System.Drawing.Size(125, 43);
             this.btncalcular.TabIndex = 12;
             this.btncalcular.Text = "Calcular";
             this.btncalcular.UseVisualStyleBackColor = false;
+            this.btncalcular.Click += new System.EventHandler(this.btncalcular_Click);
             // 
             // txtmayorparesmas
             // 
@@ -122,7 +124,7 @@ namespace Ejercicio4Guia2_MM200149
             this.txtmayorparesmas.Multiline = true;
             this.txtmayorparesmas.Name = "txtmayorparesmas";
             this.txtmayorparesmas.ReadOnly = true;
-            this.txtmayorparesmas.Size = new System.Drawing.Size(117, 31);
+            this.txtmayorparesmas.Size = new System.Drawing.Size(244, 31);
             this.txtmayorparesmas.TabIndex = 3;
             this.txtmayorparesmas.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
@@ -132,7 +134,7 @@ namespace Ejercicio4Guia2_MM200149
             this.txtimparesmas.Multiline = true;
             this.txtimparesmas.Name = "txtimparesmas";
             this.txtimparesmas.ReadOnly = true;
-            this.txtimparesmas.Size = new System.Drawing.Size(117, 31);
+            this.txtimparesmas.Size = new System.Drawing.Size(244, 31);
             this.txtimparesmas.TabIndex = 2;
             // 
             // txtcerosarreglos
@@ -141,7 +143,7 @@ namespace Ejercicio4Guia2_MM200149
             this.txtcerosarreglos.Multiline = true;
             this.txtcerosarreglos.Name = "txtcerosarreglos";
             this.txtcerosarreglos.ReadOnly = true;
-            this.txtcerosarreglos.Size = new System.Drawing.Size(117, 31);
+            this.txtcerosarreglos.Size = new System.Drawing.Size(244, 31);
             this.txtcerosarreglos.TabIndex = 1;
             // 
             // txtparnegativo
@@ -150,7 +152,7 @@ namespace Ejercicio4Guia2_MM200149
             this.txtparnegativo.Multiline = true;
             this.txtparnegativo.Name = "txtparnegativo";
             this.txtparnegativo.ReadOnly = true;
-            this.txtparnegativo.Size = new System.Drawing.Size(117, 31);
+            this.txtparnegativo.Size = new System.Drawing.Size(244, 31);
             this.txtparnegativo.TabIndex = 0;
             // 
             // listboxarreglos
@@ -189,15 +191,26 @@ namespace Ejercicio4Guia2_MM200149
             this.label6.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(407, 77);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(268, 23);
+            this.label6.Size = new System.Drawing.Size(278, 23);
             this.label6.TabIndex = 4;
-            this.label6.Text = "Presione Enter para agregar el arreglo";
+            this.label6.Text = "Presione \"Enter\" para agregar el arreglo";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(31, 22);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(119, 23);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Lista de arreglos";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(694, 441);
+            this.ClientSize = new System.Drawing.Size(816, 441);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtarreglo);
@@ -229,6 +242,7 @@ namespace Ejercicio4Guia2_MM200149
         private System.Windows.Forms.TextBox txtarreglo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
 
