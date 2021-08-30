@@ -142,5 +142,10 @@ namespace Ejercicio4Guia2_MM200149
             txtmayorparesmas.Text = mayor.ToString();
 
         }
+
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

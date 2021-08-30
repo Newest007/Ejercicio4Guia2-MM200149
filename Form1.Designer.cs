@@ -44,12 +44,14 @@ namespace Ejercicio4Guia2_MM200149
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnsalir = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox1.Controls.Add(this.btnsalir);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -110,7 +112,7 @@ namespace Ejercicio4Guia2_MM200149
             this.btncalcular.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncalcular.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncalcular.ForeColor = System.Drawing.SystemColors.Control;
-            this.btncalcular.Location = new System.Drawing.Point(498, 139);
+            this.btncalcular.Location = new System.Drawing.Point(498, 116);
             this.btncalcular.Name = "btncalcular";
             this.btncalcular.Size = new System.Drawing.Size(125, 43);
             this.btncalcular.TabIndex = 12;
@@ -209,6 +211,20 @@ namespace Ejercicio4Guia2_MM200149
             this.label7.TabIndex = 5;
             this.label7.Text = "Lista de arreglos";
             // 
+            // btnsalir
+            // 
+            this.btnsalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btnsalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsalir.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsalir.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnsalir.Location = new System.Drawing.Point(498, 171);
+            this.btnsalir.Name = "btnsalir";
+            this.btnsalir.Size = new System.Drawing.Size(125, 43);
+            this.btnsalir.TabIndex = 16;
+            this.btnsalir.Text = "Salir";
+            this.btnsalir.UseVisualStyleBackColor = false;
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -247,6 +263,7 @@ namespace Ejercicio4Guia2_MM200149
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnsalir;
     }
 }
 
