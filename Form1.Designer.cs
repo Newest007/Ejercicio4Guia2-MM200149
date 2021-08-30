@@ -126,6 +126,7 @@ namespace Ejercicio4Guia2_MM200149
             this.txtmayorparesmas.ReadOnly = true;
             this.txtmayorparesmas.Size = new System.Drawing.Size(244, 31);
             this.txtmayorparesmas.TabIndex = 3;
+            this.txtmayorparesmas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtmayorparesmas.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // txtimparesmas
@@ -136,6 +137,7 @@ namespace Ejercicio4Guia2_MM200149
             this.txtimparesmas.ReadOnly = true;
             this.txtimparesmas.Size = new System.Drawing.Size(244, 31);
             this.txtimparesmas.TabIndex = 2;
+            this.txtimparesmas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtcerosarreglos
             // 
@@ -145,6 +147,7 @@ namespace Ejercicio4Guia2_MM200149
             this.txtcerosarreglos.ReadOnly = true;
             this.txtcerosarreglos.Size = new System.Drawing.Size(244, 31);
             this.txtcerosarreglos.TabIndex = 1;
+            this.txtcerosarreglos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtparnegativo
             // 
@@ -154,6 +157,7 @@ namespace Ejercicio4Guia2_MM200149
             this.txtparnegativo.ReadOnly = true;
             this.txtparnegativo.Size = new System.Drawing.Size(244, 31);
             this.txtparnegativo.TabIndex = 0;
+            this.txtparnegativo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // listboxarreglos
             // 

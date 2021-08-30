@@ -47,10 +47,17 @@ namespace Ejercicio4Guia2_MM200149
             }
         }
 
+
+        
+
         private void btncalcular_Click(object sender, EventArgs e)
         {
+
+            //Evento para calcular el mayor de los pares negativos
+
             int mayorneg = -1000;
-            for( int i= 0; i<listboxarreglos.Items.Count; i++)
+
+            for (int i = 0; i < listboxarreglos.Items.Count; i++) 
             {
                 string valor = listboxarreglos.Items[i].ToString();
                 int numero = int.Parse(valor);
@@ -63,35 +70,76 @@ namespace Ejercicio4Guia2_MM200149
                         txtparnegativo.Text = mayorneg.ToString();
                     }
                 }
+
                 else
                 {
                     txtparnegativo.Text = "No hay numeros negativos pares";
                 }
+
             }
+
+            //Evento para calcular porcentaje de ceros
 
             double cantidadnumeros = listboxarreglos.Items.Count;
 
-            double cantidadceros = 0;
+            double cantidadceros = 0; 
             double porcentaje = 0;
+            
 
             for (int i = 0; i < listboxarreglos.Items.Count; i++)
             {
                 string valor = listboxarreglos.Items[i].ToString();
                 int numero = int.Parse(valor);
+
                 if (numero == 0)
                 {
                     cantidadceros = cantidadceros + 1;
+
                 }
-                porcentaje = (cantidadceros / cantidadnumeros) * 100;
-                txtcerosarreglos.Text = porcentaje.ToString() + "%";
             }
 
+            porcentaje = cantidadceros / cantidadnumeros * 100;
+            txtcerosarreglos.Text = porcentaje.ToString() + "%";
+
+            //Evento para obtener el promedio de impares positivos
+
+            double prom;
+            double cantidadimpares = 0;
+            double suma = 0;
+
+            for (int i = 0; i < listboxarreglos.Items.Count; i++)
+            {
+                string valor = listboxarreglos.Items[i].ToString();
+                int numero = int.Parse(valor);
+
+                if (numero > 0 && numero % 2 != 0)
+                {
+                    suma = suma + numero;
+                    cantidadimpares = cantidadimpares + 1;
+                }
+
+            }
+
+            prom = suma / cantidadimpares;
+            txtimparesmas.Text = prom.ToString();
 
 
+            //Evento para mayor de pares positivos
+            int mayor = 0;
 
+            for ( int i = 0; i < listboxarreglos.Items.Count; i++)
+            {
+                string valor = listboxarreglos.Items[i].ToString();
+                int numero = int.Parse(valor);
 
-            
+                if ( numero > 0 && numero %2 == 0)
+                {
+                    if (numero > mayor)
+                        mayor = numero;
+                }
+            }
 
+            txtmayorparesmas.Text = mayor.ToString();
 
         }
     }
